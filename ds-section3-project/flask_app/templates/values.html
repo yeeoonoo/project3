@@ -1,0 +1,102 @@
+<html>
+   <body>
+      <form action = "/predict/" method = "POST">
+         <p>id: <input type = "number" name = "id" /></p>
+         <p>amount_tsh: <input type = "number" name = "amount_tsh" /></p>
+         <p>construction_year: <select name="construction_year">
+            <option value="1960s">1960s</option>
+            <option value="1970s">1970s</option>
+            <option value="1980s">1980s</option>
+            <option value="1990s">1990s</option>
+            <option value="2000s">2000s</option>
+            <option value="unknown">unknown</option></select></p>
+
+         <p>extraction_type: <select name="extraction_type">
+            <option value="gravity">gravity</option>
+            <option value="nira/tanira">nira/tanira</option>
+            <option value="other">other</option>
+            <option value="submersible">submersible</option>
+            <option value="swn 80">swn 80</option>
+            <option value="mono">mono</option>
+            <option value="india mark ii">india mark ii</option>
+            <option value="afridev">afridev</option>
+            <option value="ksb">ksb</option>
+            <option value="rope pump">rope pump</option>
+            <option value="swn 81">swn 81</option>
+            <option value="windmill">windmill</option>
+            <option value="india mark iii">india mark iii</option>
+            <option value="cemo">cemo</option>
+            <option value="play pump">play pump</option>
+            <option value="walimi">walimi</option>
+            <option value="climax">climax</option>
+            <option value="mkulima/shinyanga">mkulima/shinyanga</option></select></p>
+
+         <p>source_type: <select name="source_type">
+            <option value="spring">spring</option>
+            <option value="shallow well">shallow well</option>
+            <option value="borehole">borehole</option>
+            <option value="river/lake">river/lake</option>
+            <option value="rainwater harvesting">rainwater harvesting </option>
+            <option value="dam">dam</option>
+            <option value="other">other</option></select></p>
+
+         <p>waterpoint_type: <select name="waterpoint_type">
+            <option value="communal standpipe">communal standpipe</option>
+            <option value="hand pump">hand pump</option>
+            <option value="other">other</option>
+            <option value="improved spring">improved spring</option>
+            <option value="cattle trough">cattle trough </option>
+            <option value="dam">dam</option></select></p>
+
+         <p>management: <select name="management">
+            <option value="user-group">user-group</option>
+            <option value="private operator">private operator</option>
+            <option value="parastatal">parastatal</option>
+            <option value="water authority">water authority</option>
+            <option value="other">other</option>
+            <option value="company">company</option>
+            <option value="unknown">unknown</option>
+            <option value="school">school</option>
+            <option value="trust">trust</option></select></p>
+
+         <p>payment_type: <select name="payment_type">
+            <option value="never pay">never pay</option>
+            <option value="per bucket">per bucket</option>
+            <option value="monthly">monthly</option>
+            <option value="unknown">unknown</option>
+            <option value="on failure">on failure</option>
+            <option value="annually">annually</option>
+            <option value="other">other</option></select></p>
+
+         <p>quality: <select name="quality">
+            <option value="good">good</option>
+            <option value="salty">salty</option>
+            <option value="unknown">unknown</option>
+            <option value="milky">milky</option>
+            <option value="colored">colored</option>
+            <option value="fluoride">fluoride</option></select></p>
+
+         <p>quantity: <select name="quantity">
+            <option value="enough">enough</option>
+            <option value="insufficient">insufficient</option>
+            <option value="dry">dry</option>
+            <option value="seasonal">seasonal</option>
+            <option value="unknown">unknown</option></select></p>
+
+         <p>populaion: <select name="populaion">
+            <option value="less 100">less 100</option>
+            <option value="less 500">less 500</option>
+            <option value="less 1,000">less 1,000</option>
+            <option value="less 5,000">less 5,000</option>
+            <option value="less 10,000">less 10,000</option>
+            <option value="less 50,000">less 50,000</option></select></p>
+
+         <p>public_meeting: <select name="public_meeting">
+            <option value="True">True</option>
+            <option value="False">False</option>
+            <option value="unknown">unknown</option></select></p>
+         <p><input type = "submit" value = "predict" /></p>
+      </form>
+   </body>
+</html>
+
